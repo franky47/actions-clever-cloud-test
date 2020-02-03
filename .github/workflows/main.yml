@@ -4,7 +4,7 @@ on: push
 
 jobs:
   noArgs:
-    name: With appID
+    name: With no arguments
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

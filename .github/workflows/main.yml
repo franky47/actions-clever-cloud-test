@@ -3,31 +3,8 @@ name: CI/CD
 on: push
 
 jobs:
-  # noArgs:
-  #   name: With no arguments
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v2
-  #     - run: git fetch --prune --unshallow
-  #     - uses: 47ng/actions-clever-cloud@master
-  #       env:
-  #         CLEVER_TOKEN: ${{ secrets.CLEVER_TOKEN }}
-  #         CLEVER_SECRET: ${{ secrets.CLEVER_SECRET }}
-
-  # appID:
-  #   name: With appID
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v2
-  #     - run: git fetch --prune --unshallow
-  #     - uses: 47ng/actions-clever-cloud@master
-  #       with:
-  #         appID: app_727cc9f3-c605-49c5-8c1f-c16dd00656f8
-  #       env:
-  #         CLEVER_TOKEN: ${{ secrets.CLEVER_TOKEN }}
-  #         CLEVER_SECRET: ${{ secrets.CLEVER_SECRET }}
-  alias:
-    name: With alias
+  deploy:
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -35,7 +12,7 @@ jobs:
       - uses: 47ng/actions-clever-cloud@master
         with:
           alias: test-app
-          logs: "none"
+          logs: 'none'
         env:
           CLEVER_TOKEN: ${{ secrets.CLEVER_TOKEN }}
           CLEVER_SECRET: ${{ secrets.CLEVER_SECRET }}

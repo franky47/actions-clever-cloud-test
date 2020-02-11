@@ -11,7 +11,8 @@ jobs:
       - run: git fetch --prune --unshallow
       - uses: 47ng/actions-clever-cloud@master
         with:
-          alias: test-app
+          # alias: test-app
+          appID: app_86a863bc-38df-4e77-8595-062fd7c64d2b
         env:
           CLEVER_TOKEN: ${{ secrets.CLEVER_TOKEN }}
           CLEVER_SECRET: ${{ secrets.CLEVER_SECRET }}

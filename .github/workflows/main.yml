@@ -12,7 +12,6 @@ jobs:
       - uses: 47ng/actions-clever-cloud@master
         with:
           alias: test-app
-          logs: none
         env:
           CLEVER_TOKEN: ${{ secrets.CLEVER_TOKEN }}
           CLEVER_SECRET: ${{ secrets.CLEVER_SECRET }}

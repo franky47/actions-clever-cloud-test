@@ -11,7 +11,6 @@ jobs:
       - run: git fetch --prune --unshallow
       - uses: 47ng/actions-clever-cloud@master
         with:
-          #   alias: test-app
           appID: app_86a863bc-38df-4e77-8595-062fd7c64d2b
           CLEVER_ENV_FOO: bar
           CLEVER_ENV_EGG: spam

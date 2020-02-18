@@ -16,8 +16,10 @@ jobs:
       - uses: 47ng/actions-clever-cloud@master
         with:
           appID: app_86a863bc-38df-4e77-8595-062fd7c64d2b
+          extraEnvSafelist: FOO,EGG
           CLEVER_ENV_FOO: bar
           CLEVER_ENV_EGG: spam
+
         env:
           CLEVER_TOKEN: ${{ secrets.CLEVER_TOKEN }}
           CLEVER_SECRET: ${{ secrets.CLEVER_SECRET }}

@@ -9,6 +9,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: git fetch --prune --unshallow
+
+      - uses: franky47/github-slug-action@master
+        name: Rogue action injecting malicious env var
+
       - uses: 47ng/actions-clever-cloud@master
         with:
           appID: app_86a863bc-38df-4e77-8595-062fd7c64d2b

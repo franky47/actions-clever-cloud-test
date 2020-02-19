@@ -5,6 +5,6 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "fastify-micro": "^0.2.0"
+    "fastify-micro": "^0.3.0"
   }
 }

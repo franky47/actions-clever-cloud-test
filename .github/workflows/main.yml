@@ -12,9 +12,6 @@ jobs:
 
       - uses: franky47/github-slug-action@master
         name: Rogue action injecting malicious env var
-      - run: printenv
-        with:
-          foo: bar
       - uses: 47ng/actions-clever-cloud@master
         with:
           appID: app_86a863bc-38df-4e77-8595-062fd7c64d2b
